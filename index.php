@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Usuários</title>
 </head>
 <body>
-    <h2>Login</h2>
-    
-    <form method="POST" action="validar.php">
-        Usuário: <input type="text" name="usuario" required><br><br>
-        Senha: <input type="password" name="senha" required><br><br>
-        <input type="submit" value="Entrar">
+    <h1>Cadastro de Usuários</h1>
+
+    <form action="inserir.php" method="post">
+        Nome: <input type="text" name="nome" required><br><br>
+        E-mail: <input type="email" name="email" required><br><br>
+        <button type="submit">Cadastrar</button>
     </form>
+
+    <br>
+    <a href="listar.php">Ver usuários cadastrados</a>
 </body>
 </html>
